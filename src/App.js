@@ -16,13 +16,13 @@ class App extends Component {
         <VerticalTimeline>
         <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2019-01-01"
+            date="2019-01-02"
             iconStyle={{ background: 'white', color: 'pink' }}
             icon={<IoMdHeart/>}>
             <h3 className="vertical-timeline-element-title">一起撸猫</h3>
-            <p>ml邀请yy去家里撸猫</p>
-            <p>yy提出借宿一晚</p>
-            <p>屋外天寒地冻，善良的ml收留了他</p>
+            <p>ML邀请YY去家里撸猫</p>
+            <p>YY提出借宿一晚</p>
+            <p>屋外天寒地冻，善良的ML收留了他</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -61,7 +61,7 @@ class App extends Component {
             <h3 className="vertical-timeline-element-title">姚远向马乐表白啦</h3>
             <ul>
               <li>YY: SYN 做我女朋友好吗?</li>
-              <li>ML: ACK 好哦好哦 SYN 作为男朋友好吗?</li>
+              <li>ML: ACK 好哦好哦 SYN 做我男朋友好吗?</li>
               <li>YY: ACK 好哦好哦 我会永远❤️你哦!</li>
             </ul>
           </VerticalTimelineElement>
