@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import { GoMail } from 'react-icons/go';
 import { GoHome } from 'react-icons/go';
-import { IoMdFilm } from 'react-icons/io'
+import {IoMdFilm, IoMdHeart} from 'react-icons/io'
 import { IoIosMailUnread } from 'react-icons/io'
 import React, { Component } from 'react';
 import './App.css';
@@ -14,6 +14,16 @@ class App extends Component {
       <div>
         <h1 className="App">姚远<span>&</span>马乐的小窝</h1>
         <VerticalTimeline>
+        <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2019-01-01"
+            iconStyle={{ background: 'white', color: 'pink' }}
+            icon={<IoMdHeart/>}>
+            <h3 className="vertical-timeline-element-title">一起撸猫</h3>
+            <p>ml邀请yy去家里撸猫</p>
+            <p>yy提出借宿一晚</p>
+            <p>屋外天寒地冻，善良的ml收留了他</p>
+        </VerticalTimelineElement>
         <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2019-01-01"
