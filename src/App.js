@@ -16,6 +16,22 @@ class App extends Component {
         <VerticalTimeline>
         <VerticalTimelineElement
             className="vertical-timeline-element--work"
+            date="2019-01-06"
+            iconStyle={{ background: 'white', color: 'pink' }}
+            icon={<IoMdHeart/>}>
+            <h3 className="vertical-timeline-element-title">YY发说说官宣了</h3>
+            <p>我向来说一不二</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2019-01-04"
+            iconStyle={{ background: 'white', color: 'pink' }}
+            icon={<IoMdHeart/>}>
+            <h3 className="vertical-timeline-element-title">第一次合影</h3>
+            <p>图略</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+            className="vertical-timeline-element--work"
             date="2019-01-02"
             iconStyle={{ background: 'white', color: 'pink' }}
             icon={<IoMdHeart/>}>
