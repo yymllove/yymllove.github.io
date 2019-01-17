@@ -1,8 +1,9 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import { GoMail } from 'react-icons/go';
 import { GoHome } from 'react-icons/go';
-import {IoMdFilm, IoMdHeart} from 'react-icons/io'
-import { IoIosMailUnread } from 'react-icons/io'
+import {IoMdFilm, IoMdHeart} from 'react-icons/io';
+import { IoIosMailUnread, IoIosContacts } from 'react-icons/io';
+import { FaBullhorn, FaCameraRetro } from 'react-icons/fa';
 import React, { Component } from 'react';
 import './App.css';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
@@ -16,17 +17,27 @@ class App extends Component {
         <VerticalTimeline>
         <VerticalTimelineElement
             className="vertical-timeline-element--work"
+            date="2019-01-12"
+            iconStyle={{ background: '#ffd662', color: 'black' }}
+            icon={<IoIosContacts/>}>
+            <h3 className="vertical-timeline-element-title">回济南&&见家长</h3>
+            <p>YY同学精心为所有人准备了礼物，并在交谈中展现了十足的人格魅力</p>
+            <p>长辈们和小弟弟对YY简直super满意，ML都惊呆了</p>
+            <p>过年就要去YY家了，ML加油哦</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+            className="vertical-timeline-element--work"
             date="2019-01-06"
-            iconStyle={{ background: 'white', color: 'pink' }}
-            icon={<IoMdHeart/>}>
+            iconStyle={{ background: '#0f7dc2', color: 'white' }}
+            icon={<FaBullhorn/>}>
             <h3 className="vertical-timeline-element-title">YY发说说官宣了</h3>
             <p>我向来说一不二</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2019-01-04"
-            iconStyle={{ background: 'white', color: 'pink' }}
-            icon={<IoMdHeart/>}>
+            iconStyle={{ background: '#615550', color: '#f0ead6' }}
+            icon={<FaCameraRetro/>}>
             <h3 className="vertical-timeline-element-title">第一次合影</h3>
             <p>图略</p>
         </VerticalTimelineElement>
