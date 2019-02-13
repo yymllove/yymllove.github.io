@@ -8,13 +8,29 @@ import React, { Component } from 'react';
 import './App.css';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-
+import data from './data.json'
 class App extends Component {
+  constructor(props) {
+    super(props);
+    console.log(data);
+  }
   render() {
+    const listItems = data.map((number) =>
+      <VerticalTimelineElement
+      className="vertical-timeline-element--work"
+      date={number.date}
+      iconStyle={number.iconStyle}
+      icon={number.icon}>
+      <h3 className="vertical-timeline-element-title">{number.title}</h3>
+      {number.text}
+      </VerticalTimelineElement>
+    );
+    console.log(listItems)
     return (
       <div>
         <h1 className="App">姚远<span>&</span>马乐的小窝</h1>
         <VerticalTimeline>
+          {listItems}
         <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2019-01-12"
@@ -60,7 +76,7 @@ class App extends Component {
             <p>互相发了一封新年email</p>
             <p>永远都要在一起哦</p>
           </VerticalTimelineElement>
-          <VerticalTimelineElement
+        <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2018-12-31"
             iconStyle={{ background: 'Aquamarine', color: 'black' }}
@@ -68,7 +84,7 @@ class App extends Component {
             <h3 className="vertical-timeline-element-title">小窝建成</h3>
             <p>往后人生，多多指教</p>
           </VerticalTimelineElement>
-          <VerticalTimelineElement
+        <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2018-12-30"
             iconStyle={{ background: 'WhiteSmoke', color: 'black' }}
@@ -79,7 +95,7 @@ class App extends Component {
               <li>第一次牵手👫</li>
             </ul>
           </VerticalTimelineElement>
-          <VerticalTimelineElement
+        <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2012-12-29"
             iconStyle={{ background: 'pink', color: 'white' }}
