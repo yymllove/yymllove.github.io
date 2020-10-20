@@ -22,7 +22,7 @@ class App extends Component {
       iconStyle={number.iconStyle}
       icon={number.icon}>
       <h3 className="vertical-timeline-element-title">{number.title}</h3>
-      {number.text}
+      <a href={number.href}>{number.text}</a>
       </VerticalTimelineElement>
     );
     console.log(listItems)
